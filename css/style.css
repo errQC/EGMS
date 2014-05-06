@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	background-image: url(../images/bg.png);
+}
+
+.top {
+	height: 40px;
+	background: #c8beaf;
+	box-shadow: 0 1px 10px;
+}
+
+.top-content {
+	width: 920px;
+	height: 35px;
+	position: relative;
+	margin: auto;
+	top: 5%;
+}
+
+.logo {
+	position: absolute;
+	transition:All 1s ease-in-out;
+	-webkit-transition:All 1s ease-in-out;
+	-moz-transition:All 1s ease-in-out;
+	-o-transition:All 1s ease-in-out;
+	transform: rotate(0deg) scale(0.8) skew(1deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(0.6) skew(1deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(0.6) skew(1deg) translate(0px);
+	-o-transform: rotate(0deg) scale(0.6) skew(1deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(0.6) skew(1deg) translate(0px);
+}
+
+.logo:hover {
+	transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(1deg) translate(0px);
+}
+
+#frmSearch {
+	position: absolute;
+	margin-left: 190px;
+	margin-top: 0.8%;
+}
+
+#frmSearch #keyword {
+	height: 20px;
+	width: 200px;
+	
+	/*background: rgba(190,176,155, 0.9);*/
+	background: -webkit-linear-gradient(rgba(190,176,145, 0.1), rgba(190,176,155, 0.9)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(190,176,145, 0.1), rgba(190,176,155, 0.9)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(190,176,145, 0.1), rgba(190,176,155, 0.9)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(217,208,194), rgb(187,176,160)); /* Standard syntax */
+	color: #f6f6f6;
+	
+	border: none;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.40);
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	transition-property: width;
+	transition-duration: 0.5s;
+	-webkit-transition-property: width; /* Safari */
+	-webkit-transition-duration: 0.5s; /* Safari */
+}
+
+#frmSearch #keyword:focus {
+	width: 300px;
+	
+	background: #FFF;
+	color: #000;
+	
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.dashboard {
+	position: absolute;
+	margin-left: 450px;
+	width: 470px;
+	text-align: right;
+	margin-top: 1%;
+	color: #7F7F7F;;
+}
+
+.dashboard #login {
+	cursor: pointer;
+	color: #747474;
+}
+
+.dashboard #login:hover {
+	color: #f6f6f6;
+}
+
+.container {
+	width: 920px;
+	margin: 25px auto;
+}
+
+.slider {
+	position: relative;
+	margin: 0px auto;
+	top: 10px;
+}
+
+.content {
+	
+}
+
+.title {
+	color: #f6f6f6;
+	background: #c8beaf;
+	width: 250px;
+	padding: 5px;
+	padding-left: 15px;
+	font-size: 18px;
+}
+
+/* PRODUCT STYLE */
+.product {
+	float: left;
+	width: 160px;
+	height: 170px;
+	background: #FFF;
+	margin: 12px 12px;
+	text-align: center;
+}
+
+.product img {
+	margin-top: 5px;
+}
+
+.product .description {
+	width: 100%;
+	height: 35px;
+	color: #f6f6f6;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 5px;
+	margin-top: 5px;
+	background: #c8beaf;
+	
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-orient:vertical;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+
+	/* Safari and Chrome */
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+
+	/* W3C */
+	display:box;
+	box-orient:vertical;
+	box-pack:center;
+	box-align:center;
+}
+
+.product:hover {
+	box-shadow: 0 0 3px;
+	cursor: pointer;
+}
+
+.tooltip {
+	visibility: hidden;
+	position: fixed;
+	
+	width: 300px;
+	
+	padding: 5px;
+	background-color: rgba(200, 190, 175, 0.5);
+	color: #999;
+	
+	border-width:5px;
+	border-radius: 5px;
+}
+
+.tt-product-name {
+	font-size: 18px;
+	background: #b7ad9e;
+	color: #FFF;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.tt-price {
+	background: #b7ad9e;
+	color: #FFF;
+	font-style: italic;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+.tt-general-decription {
+	background: #FFF;
+	padding-left: 5px;
+	font-style: italic;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+/* END */
+
+.bottom {
+	clear: both;
+	background: #c8beaf;
+	height: 150px;
+	box-shadow: 0 -1px 10px;
+}
+
+a#backToTop {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 30px;
+	right: 30px;
+    display: none;
+	z-index: 1000;
+	background: url(../images/top.png);
+	background-size: contain;
+}
+
+#frmLogin {
+	width: 350px;
+	height: 200px;
+	margin-left: -175px;
+	margin-top: -100px;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	border-radius: 10px;
+	display: none;
+	z-index: 9999;	
+	
+	background: #c8beaf;
+	color: #FFF;
+	padding: 10px;
+}
+
+#pos-ad-01 {
+	width: 450px;
+	height: 300px;
+	text-align: center;
+	position: fixed;
+	margin-left: -225px;
+	margin-top: -150px;
+	left: 50%;
+	top: 50%;
+	z-index: 9999;
+
+	background-color: rgba(200, 190, 175, 0.5);
+	border-radius: 10px;
+	padding: 5px;
+	display: none;
+}
+
+#pos-ad-01 img {
+	border-radius: 6px;
+}
+
+#pos-ad-03 {
+	right: 0;
+	top: 50%;
+	margin-top: -150px;
+	position: fixed;
+	bottom: 0;
+	display: block;
+}
+
+#pos-ad-03 #ad3 {
+	border-radius: 10px 0 0 10px;
+}
+
+#pos-ad-03 #close-button {
+	display: block;
+	position: fixed;
+	right: 93px;
+	padding-top: 2px;
+}
+
+#screen
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 9998;
+}
